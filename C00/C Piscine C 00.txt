@@ -1,0 +1,328 @@
+Texto extraído de: C Piscine C 00.pdf
+==================================================
+
+--- PÁGINA 1 ---
+
+O Piscine
+Summary: This document serves as the subject for the C 00 module of the C Piscine at
+42.
+Version: 8
+
+
+--- PÁGINA 2 ---
+
+Contents
+I Instructions 2
+II AI Instructions A
+Ill Foreword 6
+IV Exercise 00: ft putchar 7
+V Exercise 01: ft print alphabet 8
+VI Exercise 02: ft print reverse alphabet 9
+VII Exercise 03: ft print numbers 10
+VIII Exercise 04: ft is negative 11
+IX Exercise 05: ft print comb 13
+X Exercise 06: ft print comb2 14
+XI Exercise 07: ft putnbr 15
+XII Exercise 08: ft print combn 16
+XII Submission and peer-evaluation 17
+1
+
+
+--- PÁGINA 3 ---
+
+Chapter I
+Instructions
+e Only this page serves as your reference, do not trust rumors.
+e Watch out! This document may change before submission.
+e Ensure you have the appropriate permissions on your files and directories.
+e You must follow the submission procedures for all your exercises.
+e Your exercises will be checked and graded by your fellow classmates.
+e Additionally, your exercises will be evaluated by a program called Moulinette.
+e Moulinette is meticulous and strict in its assessment. It is fully automated, and
+there is no way to negotiate with it. To avoid unpleasant surprises, be as thorough
+as possible.
+e Moulinette is not open-minded. If your code does not adhere to the Norm, it won’t
+attempt to understand it. Moulinette relies on a program called norminette to
+check if your files comply with the Norm. TL;DR: Submitting work that doesn’t
+pass norminette’s check makes no sense.
+e These exercises are arranged in order of difficulty, from easiest to hardest. We will
+not consider a successfully completed harder exercise if an easier one is not fully
+functional.
+e Using a forbidden function is considered cheating. Cheaters receive a grade of -42,
+which is non-negotiable.
+e You only need to submit a main() function if we specifically ask for a program.
+e Moulinette compiles with the following flags: -Wall -Wextra -Werror, using
+cc.
+e If your program does not compile, you will receive a grade of 0.
+e You cannot leave any additional file in your directory beyond those specified in
+the assignment.
+e Have a question? Ask the peer on your right. If not, try the peer on your left.
+2
+
+
+--- PÁGINA 4 ---
+
+C Piscine C 00
+e Your reference guide is called Google / man / the Internet / ...
+e Check the "C Piscine" section of the forum on the intranet or the Piscine on Slack.
+e Carefully examine the examples. They may contain crucial details that are not
+explicitly stated in the assignment...
+e By Odin, by Thor! Use your brain!!!
+\ ' Don’t forget to include the standard 42 header in each of your .c
+S and .h files. Norminette checks for its presence anyway!
+Norminette must be run with the -R CheckForbiddenSourceHeader flag.
+Moulinette will use it too.
+3
+
+
+--- PÁGINA 5 ---
+
+Chapter II
+Al Instructions
+O Context
+The C Piscine is intense. It’s your first big challenge at 42 — a deep dive into problem-
+solving, autonomy, and community.
+During this phase, your main objective is to build your foundation — through struggle,
+repetition, and especially peer-learning exchange.
+In the Al era, shortcuts are easy to find. However, it’s important to consider whether your
+Al usage is truly helping you grow — or simply getting in the way of developing real skills.
+The Piscine is also a human experience — and for now, nothing can replace that. Not
+even Al.
+For a more complete overview of our stance on AI — as a learning tool, as part of the
+ICT curriculum, and as a growing expectation in the job market — please refer to the
+dedicated FAQ available on the intranet.
+O Main message
+@ Build strong foundations without shortcuts.
+© Really develop tech & power skills.
+@ Experience real peer-learning, start learning how to learn and solve new problems.
+@ The learning journey is more important than the result.
+@ Learn about the risks associated with AI, and develop effective control practices
+and countermeasures to avoid common pitfalls.
+4
+
+
+--- PÁGINA 6 ---
+
+C Piscine C 00
+O Learner rules:
+e You should apply reasoning to your assigned tasks, especially before turning to AI.
+e You should not ask for direct answers to the AI.
+e You should learn about 42 global approach on Al.
+O Phase outcomes:
+Within this foundational phase, you will get the following outcomes:
+e Get proper tech and coding foundations.
+e Know why and how AI can be dangerous during this phase.
+O Comments and example:
+e Yes, we know AI exists — and yes, it can solve your projects. But you’re here to
+learn, not to prove that AI has learned. Don’t waste your time (or ours) just to
+demonstrate that AI can solve the given problem.
+e Learning at 42 isn’t about knowing the answer — it’s about developing the ability
+to find one. AI gives you the answer directly, but that prevents you from building
+your own reasoning. And reasoning takes time, effort, and involves failure. The
+path to success is not supposed to be easy.
+e Keep in mind that during exams, Al is not available — no internet, no smartphones,
+etc. You'll quickly realise if you’ve relied too heavily on AI in your learning process.
+e Peer learning exposes you to different ideas and approaches, improving your inter-
+personal skills and your ability to think divergently. That’s far more valuable than
+just chatting with a bot. So don’t be shy — talk, ask questions, and learn together!
+e Yes, AI will be part of the curriculum — both as a learning tool and as a topic
+in itself. You’ll even have the chance to build your own AI software. In order to
+learn more about our crescendo approach you'll go through in the documentation
+available on the intranet.
+Y Good practice:
+I’m stuck on a new concept. I ask someone nearby how they approached it. We talk
+for 10 minutes — and suddenly it clicks. I get it.
+X Bad practice:
+I secretly use AI, copy some code that looks right. During peer evaluation, I can’t
+explain anything. I fail. During the exam — no AI — I’m stuck again. I fail.
+5
+
+
+--- PÁGINA 7 ---
+
+Chapter III
+Foreword
+Cod liver oil is a nutritional supplement derived from the liver of codfish (Gadidae
+Like most fish oils, it contains high levels of omega-3 fatty acids, including
+eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). Cod liver oil is
+also rich in vitamins A and D.
+Historically, it has been consumed for its vitamin A and vitamin D content.
+It was once commonly given to children, as vitamin D has been shown to prevent
+rickets and other symptoms of vitamin D deficiency.
+In contrast to cod liver oil, C is good, make sure to eat some!
+6
+
+
+--- PÁGINA 8 ---
+
+Chapter IV
+e
+Exercise 00: ft putchar
+ft putchar
+Turn-in directory: ex00/
+Allowed functions: write
+e Write a function that displays the character passed as a parameter.
+e The function should be prototyped as follows:
+e To display the character, you must use the write function as follows:
+The first retry delay is short, so don’t hesitate to trigger an
+=) intermediate evaluation to track your progress.
+7
+
+
+--- PÁGINA 9 ---
+
+Chapter V
+Exercise 01: ft print alphabet
+ft print alphabet
+Turn-in directory: ex01/
+Files to turn in: ft print alphabet.c
+Allowed functions: write
+e Create a function that displays the alphabet in lowercase, on a single line, in as-
+cending order, starting from the letter ’a’.
+e The function should be prototyped as follows:
+Don't hesitate to randomly ask someone in your cluster if you have a
+= question.
+8
+
+
+--- PÁGINA 10 ---
+
+Chapter VI
+Exercise 02:
+ft print reverse alphabet
+eh
+ft print reverse alphabet
+Turn-in directory: ex02/
+Files to turn in: ft print reverse alphabet.c
+Allowed functions: write
+e Create a function that displays the alphabet in lowercase, on a single line, in de-
+scending order, starting from the letter 'z'.
+e The function should be prototyped as follows:
+S Push your code to Git regularly!
+9
+
+
+--- PÁGINA 11 ---
+
+Chapter VII
+Exercise 03: ft print numbers
+Turn-in directory: ex03/
+Allowed functions: write
+e Create a function that displays all digits on a single line, in ascending order.
+e The function should be prototyped as follows:
+S Collaboration is the key to success.
+10
+
+
+--- PÁGINA 12 ---
+
+Chapter VIII
+Exercise 04: ft is negative
+Turn-in directory: ex04/
+Allowed functions: write
+e Create a function that displays ’N’ or ’P’ depending on the sign of the integer passed
+as a parameter.
+o If n is negative, display ’N’.
+o If n is positive or zero, display 'P”.
+e The function should be prototyped as follows:
+S Failure is part of your learning journey.
+1
+
+
+--- PÁGINA 13 ---
+
+C Piscine C 00
+Milestone Achieved, Keep Going!
+You have reached the end of the mandatory exercises required to validate this project.
+Now, it’s up to you to decide whether to continue with the following optional exercises
+or move on to your next project. Both paths will expose you to valuable concepts sooner
+or later.
+To make your decision, consider the following points:
+e The very first exam focuses on C programming. If you’ve already worked on the
+first C project, this experience will be useful. The same applies to the "rush" at the
+end of the week (you'll soon learn more about it).
+e Your excellence in this Piscine is evaluated based on multiple factors. Completing
+each project is important, but your overall progress across all Piscine projects also
+plays a key role. Choose wisely to optimize your results.
+e You can always revisit and retry the same project in a few days or weeks, up until
+the end of the Piscine.
+e Staying synchronized with your peers fosters better collaboration.
+12
+
+
+--- PÁGINA 14 ---
+
+Chapter IX
+Exercise 05: ft print comb
+Turn-in directory: ex05/
+Allowed functions: write
+e Create a function that displays all unique combinations of three distinct digits,
+with both the digits within each combination and the combinations themselves in
+ascending order.
+e Expected output:
+$>./a.out | cat -e
+012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 789$>
+e 987 is not included because 789 already covers that combination.
+e 999 is not included because the digit 9 appears more than once.
+e The function should be prototyped as follows:
+S Did you check with your neighbor on the right?
+13
+
+
+--- PÁGINA 15 ---
+
+Chapter X
+Exercise 06: ft print comb2
+Turn-in directory: ex06/
+Allowed functions: write
+e Create a function that displays all different combinations of two distinct two-digits
+numbers (XX XX) between 00 and 99, listed in ascending order.
+e Expected output:
+$>./a.out | cat -e
+e The function should be prototyped as follows:
+S Get inspired by others, but don’t let them do the work for you!
+14
+
+
+--- PÁGINA 16 ---
+
+Chapter XI
+Exercise 07: ft putnbr
+Turn-in directory: ex07/
+Allowed functions: write
+e Create a function that displays the number passed as a parameter. The function
+must be able to display all possible values of an int type variable.
+e The function should be prototyped as follows:
+e Example:
+o ft_putnbr(42); should display 42.
+Don’t trust any single source of information, always run your own
+= tests, checks, and verifications!
+15
+
+
+--- PÁGINA 17 ---
+
+Chapter XII
+Exercise 08: ft print combn
+Turn-in directory: ex08/
+Allowed functions: write
+e Create a function that displays all unique combinations of n distinct digits in as-
+cending order, without repetition.
+e The value of n will be such that: 0 <n < 10.
+e Example output for n = 2:
+$>./a.out | cat -e
+01, 02, 03, ..., 09, 12, ..., 79, 89$>
+e The function should be prototyped as follows:
+BS Did you check with your neighbor on the left?
+16
+
+
+--- PÁGINA 18 ---
+
+Chapter XIII
+Submission and peer-evaluation
+Submit your assignment in your Git repository as usual. Only the work inside your
+repository will be evaluated during the defense. Make sure to double-check the names of
+your files to ensure they are correct.
+/N You must submit only the files specified in the project instructions.
+17
